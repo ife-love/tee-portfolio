@@ -1,0 +1,483 @@
+/* import fonts from fonts.css file */
+@import url(/static/css/fonts.css);
+
+/* css variables */
+
+@import url(/static/css/partials/variables.css);
+
+/* _global variables */
+@import url(/static/css/partials/global.css);
+
+/* .heros{
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    background: #1d2026;
+} */
+
+ .anim2{
+    opacity: 0;
+    transform: translateX(20px);
+    animation: shake 0.5 forwards .9s ease-in-out;
+
+ }
+
+ @keyframes shake{
+    0%{
+        opacity: 0;
+        transform: rotate(0) translateX(-30px);
+    }
+    76%{
+        transform: rotate(0) translateX(10px);
+        opacity: 2;
+    }
+ }
+
+ .anim3{
+    opacity: 0;
+    transform: translateX(20px);
+     animation: shakes 0.5 forwards 1s ease;
+
+ }
+
+ @keyframes shakes{
+    0%{
+        opacity: 0;
+        transform: rotate(0) translateX(100px);
+    }
+    76%{
+        transform: rotate(0) translateX(0px);
+        opacity: 2;
+    }
+ }
+
+
+ .anim{
+    opacity: 0;
+    transform: translateY(30px);
+    animation: moveup 0.5s linear forwards;
+ }
+
+ @keyframes moveup{
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+ }
+
+ .header-area{
+    padding-top: 1rem;
+ }
+
+.header-area .main-menu .navbar .navbar-brand{
+    padding: 0 2rem 0 5rem;
+}
+
+.header-area .main-menu .navbar{
+    padding: 1rem 10rem;
+}
+
+.header-area .main-menu .nav-item .nav-link{
+    font: normal 500 15px/2px var(--font-roboto);
+    text-transform: uppercase;
+    padding: 1.7rem;
+    color: var(--title-color);
+
+}
+
+.header-area .main-menu .navbar-nav .active{
+    background: var(--grad-col);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+.header-area .main-menu .navbar-nav a:hover{
+    background: var(--grad-col);
+    -webkit-text-fill-color:transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+.header-area .main-menu .navbar .navbar-brand img{
+    height: 45px;
+    width: 80px;
+}
+
+/* / END NAVIGATION */
+
+
+/*################################ Banner Area ###############################*/
+
+.site-main .site-banner{
+    margin-top: 90px;
+    background: url('../img/clothes/cloth2.jpg');
+    background-repeat: no-repeat;
+    background-position:auto;
+    position: relative;
+
+}
+
+ .site-main .site-banner .site-title h3{
+    
+    padding-top: 35%;
+    font-weight: 500;
+ }
+
+.site-main .site-banner .site-title h3::after{
+    content: '';
+    height: 2px;
+    width:18vw;
+    background: black;
+    display: inline-block;
+    margin-left: 5%;
+    transform: translateY(-10px);
+}
+
+ .site-main .site-banner .site-title h1{
+    font-size: 5rem;
+    animation-delay: 0.5s;
+}
+
+.site-main .site-banner .site-title h4{
+    font-size: 1.5rem;
+    animation-delay: 1s;
+}
+
+.site-main .site-banner .banner-image > img{
+    padding: 7rem 0;
+    width: 100%;
+}
+
+.site-main .site-banner .banner-image > img.anim{
+    animation-delay: 1.5s;
+}
+
+.site-main .site-banner .site-title .site-buttons{
+    animation-delay: 1.9s;
+}
+
+/* .site-main .site-banner .site-title .but-3{
+    animation-delay: 1.5;
+} */
+
+
+/*################################ End Banner Area ###############################*/
+
+
+/*################################ start about Area ###############################*/
+
+.site-main .about-area{
+    padding: 8rem 5rem;
+}
+
+.site-main .about-area .about-title h2 > span {
+    display: block;
+    font: normal bold 49px/60px var(--font-roboto);
+    letter-spacing: 21px;
+}
+
+.site-main .about-area .about-title .paragraph > p {
+    padding: .4rem 0;
+}
+
+.site-main .about-area .about-title{
+    padding-top: 2rem;
+}
+
+
+
+/*################################ end about Area ###############################*/
+
+
+/*################################ start brand Area ###############################*/
+
+.site-main .brand-area{
+
+    padding: 1rem 20rem;
+    margin-bottom: 4rem;
+}
+
+.site-main .brand-area .first-row .col-lg-4{
+    display: flex;
+    justify-content:center;
+}
+
+.site-main .brand-area .first-row .col-lg-4 .single-brand{
+    border: 1px solid var(--border-color);
+    text-align:center;
+    padding: 1.8rem 0rem;
+    margin: .9rem 0rem;
+    width: 180px;
+    height: 100px;
+    cursor: pointer;
+    transition: transform .4s ease;
+}
+
+.site-main .brand-area .first-row .col-lg-4 .single-brand>img{
+    width: 100%;
+    height: 100%;
+}
+
+.site-main .brand-area .first-row .col-lg-4 .single-brand:hover{
+    box-shadow: var(--box-shadow);
+    transform: scale(1.2);
+}
+
+.site-main .brand-area .experience-area{
+    padding-left: 1rem;
+}
+
+.site-main .brand-area .experience-area span{
+    display: block;
+}
+
+.site-main .brand-area .experience-area .spans{
+    padding-top: 1rem;
+    font-family: var(--font-roboto);
+    font-weight: bold;
+    color: #000;
+}
+
+.site-main .brand-area .experience-area .years-area{
+    background: url("../img/blanks/blank2.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: relative;
+    width: 400px;
+    height: 300px;
+    margin-left: 50px;
+    z-index: -1;
+}
+
+.site-main .brand-area .experience-area .years-area .years{
+    font: normal bold 100px/60px var(--font-roboto);
+    color: rgb(8, 94, 94);
+    z-index: 2;
+}
+
+.site-main .brand-area .experience-area .years-area .years h2 > span{
+    font: normal 600 22px/30px var(--font-roboto);
+}
+
+.site-main .brand-area .experience-area .call-area{
+    padding-top: 1rem;
+    padding-left: 70px;
+    color: rgb(8, 94, 94);
+}
+
+ .site-main .brand-area .experience-area .call-area .call-now{
+    font-family: var(--font-roboto);
+}
+
+/* .site-main .brand-area .first-row .col-lg-4 .single-brand:hover img{
+    filter: brightness(.15);
+} */
+/*################################ end Brand Area ###############################*/
+
+
+/*################################ start Services Area ###############################*/
+
+.site-main .services-area{
+    padding: 7rem 2rem;
+}
+
+.site-main .services-area .services-title{
+    padding: 0 14rem;
+}
+
+.site-main .services-area .services-title h1{
+    font-size: 35px;
+}
+
+.site-main .services-area .services{
+    background: white;
+    padding: 2rem 0rem;
+    width: 16rem;
+    margin: 5rem .5rem;
+    transition: box-shadow .8s ease;
+}
+
+.site-main .services-area .services:hover{
+    box-shadow: var(--box-shadow);
+}
+
+/*################################ end services Area ###############################*/
+
+
+
+/*################################ start project Area ###############################*/
+
+.site-main .project-area{
+    padding: 4rem 0;
+}
+
+.site-main .project-area .button-group button{
+    background: transparent;
+    border: none;
+    font: normal 500 16px/130px var(--font-roboto);
+    text-transform: uppercase;
+}
+
+.site-main .project-area .button-group button + button{
+    padding-left: 3rem;
+}
+
+.site-main .project-area .grid .our-project > .title h4{
+    font: normal 700 25px/12px var(--font-roboto);
+}
+
+.site-main .project-area .grid .our-project .img a:hover img{
+    filter: brightness(1.2) drop-shadow(1px 8px 30px #b1afaf);
+}
+
+
+
+
+/*################################ end project Area ###############################*/
+
+
+
+/*################################start aboutme Area ###############################*/
+
+.site-main .about-me-area .about-title p{
+    padding: 1rem 14rem;
+}
+
+.site-main .about-me-area .client{
+    background: #ffffff10;
+    box-shadow: var(--box-shadow);
+    margin: 3rem 0rem;
+}
+
+.site-main .about-me-area .client .client-img{
+
+    padding: 2rem;
+    
+}
+
+.site-main .about-me-area .client .about-client{
+
+    padding-top: 2rem;
+    
+}
+
+.site-main .about-me-area .client .about-client h4{
+
+    font: normal 500 21px/20px var(--font-roboto);
+    
+}
+
+.site-main .about-me-area .client .about-client p{
+
+    font-size: 14px;
+    
+}
+
+.site-main .about-me-area .owl-carousel .owl-item{
+    display: flex;
+    justify-content: center;
+    padding: 0 1.5rem;  
+}
+
+.site-main .about-me-area .owl-carousel .owl-dots .owl-dot .active span{
+   background: var(--primary-color);
+   width: 12px;
+   height: 12px;
+}
+
+
+/*################################ end aboutme Area ###############################*/
+
+
+/*################################ start subscribe Area ###############################*/
+
+.site-main .subscribe-us-area .subscribe{
+    /* background: rgb(55, 149, 204); */
+    background: url("../img/bg/blue1.jfif");
+    background-position: center center;
+    background-repeat: repeat;
+    position: relative;
+    padding: 10rem 0;
+    margin: 5rem auto;
+}
+
+.site-main .subscribe-us-area .subscribe .subscribe-title h4{
+    font: normal 700 30px/30px var(--font-roboto);
+    color: whitesmoke;
+}
+
+.site-main .subscribe-us-area .subscribe .subscribe-title p{
+    color: whitesmoke;
+    padding: 1rem 4rem;
+}
+
+.site-main .subscribe-us-area .subscribe form .input-textbox input{
+    width: 400px;
+    padding: 1.5rem 1rem;
+    border: 1px solid whitesmoke;
+    background: transparent;
+    color: whitesmoke;
+    font: normal 500 17px/20px var(--font-roboto);
+}
+
+.site-main .subscribe-us-area .subscribe form .input-textbox input::placeholder{
+    color: whitesmoke;
+}
+
+.site-main .subscribe-us-area .subscribe form .btn-submit button{
+    background: whitesmoke;
+    color: #000;
+    padding: 1rem 2rem;
+}
+
+/*################################ end subscribe Area ###############################*/
+
+
+.footer-area .site-logo img{
+    height: 50px;
+    /* width: 100px; */
+}
+
+.footer-area{
+    margin: 5rem 0;
+    background: url(../images/waters/wave2.jpg);
+    background-repeat: no-repeat;
+    position: absolute;
+    background-size: cover;
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+}
+
+footer .footer-area .social h5{
+    font: normal 500 23px/30px var(--font-roboto);
+}
+
+.footer-area .social a >i{
+    font-size: 22px;
+    padding: 2rem;
+    color: var(--border-color2);
+}
+
+.footer-area .social a:hover > i{
+    color: var(--primary-color2);
+}
+
+.footer-area .arrow a i{
+    color: black;
+    position: absolute;
+    padding-left: 10px;
+    scroll-behavior: smooth;
+}
+
+.footer-area .arrow a:hover i{
+    color: var(--primary-color);
+}
+
+.scroll-down header{
+    transform: translate3d(0, -100%, 0);
+}
+.scroll-up header{
+    filter: drop-shadow(0 -10px 20px rgb(170,170,170));
+}

@@ -1,0 +1,31 @@
+{% extends 'navbar.html' %}
+{% load static %}
+
+{% block content %}
+
+<link rel="stylesheet" href="{% static 'css/proj.css' %}">
+
+<section class="bod">
+    <div id="design">
+
+        <div class="center">
+    
+            <div class="outer circle">
+                <button><a href="{% url 'completed-projects' %}">Completed Projects</a></button>
+                <span></span>
+                <span></span>
+            </div>
+            
+            <div class="outer button">
+                <button> <a href="{% url 'active-projects' %}">active projects</a></button>
+                <span></span>
+                <span></span>
+            </div>
+        
+        </div>
+    
+    </div>
+    
+</section>
+
+{% endblock %}

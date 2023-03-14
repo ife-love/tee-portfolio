@@ -1,0 +1,35 @@
+{% extends 'navbar.html' %}
+{% load static %}
+{% block title %}
+    Create a New Blog Post!
+{% endblock %}
+
+{% block content %}
+
+<section>
+    <div class="container p-5">
+        <div class="p-5 bg-light">
+    
+            <h1 class="">Add Post...</h1>
+            <br>
+            <div class="form-group">
+                <form method ="post" enctype="multipart/form-data"  class="form-group">
+                    {% csrf_token %}
+                    {{form.media}}
+                    {{form.as_p}}
+                    <button type="submit" class="save btn btn-secondary">Save</button>
+                </form>
+            </div>
+
+    
+        </div>
+    
+    </div>
+</section>
+
+<script>
+    var username = "{{ user.id }}"
+    document.getElementById("elder").value = username;
+</script>
+
+{% endblock %}

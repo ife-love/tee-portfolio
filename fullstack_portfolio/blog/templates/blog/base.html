@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}ArchTBlog{%endblock%}</title>
+    
+
+    <!-- font awesome icons -->
+    <link rel="stylesheet" type="text/css" href="{% static 'css/all.min.css' %}">
+
+    <!-- owl carousel css file -->
+    <link rel="stylesheet" href="{% static 'vendor/owl-carousel/css/owl.carousel.min.css' %}">
+    <link rel="stylesheet" href="{% static 'vendor/owl-carousel/css/owl.theme.default.min.css' %}">
+
+    <!-- AOS library -->
+    <link rel="stylesheet" href="{% static 'css/blog/aos.css' %}">
+
+    <!-- Custom Style -->
+    <link rel="stylesheet" href="{% static 'css/blog/style.css' %}">
+
+</head>
+<body>
+    <!-- --------------------- Navigation ------------------- -->
+
+    <nav class="nav  navbar_fixed">
+        <div class="nav-menu flex-row">
+            <div class="nav-brand flex-row">
+                <a href="{% url 'home' %}"><img src="{% static 'img/logoarc.jpeg' %}" alt="IfeTech" class="img-flud"></a>
+                <a class="text-grey nav-text" href="#">TopTier</a>
+            </div>
+            <div class="toggle-collapse">
+                <div class="toggle-icons">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+
+            <div>
+                <ul class="nav-items">
+                    <li class="nav-link active">
+                        <a href="#">Home</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#">Category</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#">Archives</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#">Pages</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="social text-grey">
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+
+            </div>
+        </div>
+    </nav>
+
+    <!-------------@---------- End Navigation ------------@------- -->
+
+<div>
+    {% block content %}
+    {% endblock %}
+</div>
+
+
+<!-- ----------------------------------- Footer Area --------------------------------------- -->
+
+<footer class="footer">
+
+    <div class="container">
+        <div class="about-us" data-aos="fade-right" data-aos-delay="300">
+            <h2>About Us</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur deleniti nostrum non consequatur? Totam, repellat pariatur expedita eveniet suscipit vero.</p>
+        </div>
+        <div class="newsletter" data-aos="fade-right" data-aos-delay="300">
+            <h2>Newsletter</h2>
+            <p>Stay Updated with the latest</p>
+            <div class="form-element">
+                <input type="text" placeholder="Email"><span><i class="fa fa-chevron-right"></i></span>
+            </div>
+        </div>
+        <div class="instagram" data-aos="fade-left" data-aos-delay="300">
+            <h2>Instagram</h2>
+            <div class="flex-row">
+                <img src="{% static 'images/tee_pix/stairs.jpg' %}" alt="inst-1">
+                <img src="{% static 'images/tee_pix/main.jpg' %}" alt="inst-2">
+                <img src="{% static 'images/tee_pix/ram.jpg' %}" alt="inst-3">
+            </div>
+            
+            <div class="flex-row">
+                <img src="{% static 'images/tee_pix/santa-club.jpg' %}" alt="inst-4">
+                <img src="{% static 'images/tee_pix/ketchup.jpg' %}" alt="inst-5">
+                <img src="{% static 'images/tee_pix/seat.jpg' %}" alt="inst-6">
+            </div>
+
+
+        </div>
+        <div class="follow" data-aos="fade-left" data-aos-delay="300">
+            <h2>Follow Us</h2>
+            <p>Let's Socialize</p>
+            <div>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="rights flex-row">
+        <h4 class="text-grey">
+            Copyright &copy; 2022 All rights reserved | <a href="" target="_blank">Freeform Atelier, TopTier Architecture &  Arc Anixar <i class="fab fa-instagram"></i> handle</a>
+        </h4>
+    </div>
+    <div class="move-up">
+        <span><i class="fa-solid fa-arrow-circle-up fa-2x"></i></span>
+    </div>
+</footer>
+
+
+<!-- ----------------------------------- End Footer Area --------------------------------------- -->
+
+
+    <!-- Custom Js Style -->
+    <!-- <script src="{% static 'js/blog/blog.js' %}"></script> -->
+
+    <!-- jquery js file -->
+        <!-- jquery js file -->
+    <script src="{% static 'js/jquery3.61.js' %}"></script>
+    <!-- <script src="/static/js/jquery3.61.js"></script> -->
+
+
+    <!-- owl carousel js file -->
+    <script src="{% static 'vendor/owl-carousel/js/owl.carousel.min.js' %}"></script>
+
+    <!-- AOS JS library -->
+    <script src="{% static 'js/blog/aos.js' %}"></script>
+    <script>
+        AOS.init();
+    </script>
+
+    <!-- <script src="/static/js/blog/blog.js"></script> -->
+    <script src="{% static 'js/blog/blog.js' %}"></script>
+
+
+</body>
+</html>

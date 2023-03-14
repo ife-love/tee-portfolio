@@ -1,0 +1,59 @@
+<h3>{{ post_count }} posts available</h3>
+<h1 class="postdate pt-5 container centerstage">POSTS</h1>
+    <br><br>
+
+{% if request.user.is_authenticated %}
+
+    <a href="{% url 'create-post' %}">New Post</a>
+{% endif %}
+
+<hr><hr>
+
+<section class="text-dark mb-sm-5 pt-lg-0 text-center text-lg-start centerstage post">
+
+    <div class="container">
+
+        <div class="row text-center justify-content-lg-around d-flex-align-item-stretch">
+            {% for post in posts %}
+
+            {% if post.image %}
+            <div class="col-md-3">
+              <img class=" img-fluid d-none pt-lg-3 d-sm-block rounded" src="{{post.image.url}}" alt="NOT FOUND!!!">
+            </div>
+            {% endif %}
+
+            
+            <div class="col-md-7">
+                <div class="card">
+                    <div class="card-body text-center">
+                        <h3 class="card-title mb-3">
+                            <h1 class='posttitle'>{{post.title}} - {{post.category.name}}</h1>
+                        </h3>
+                        <p class="card-text">
+                            <p><a href="{% url 'post-detail' post.id %}">{{post.body|truncatechars:200|safe}}</a></p>
+                        </p>
+                        {% if user.id == post.author.id %}
+                        <a href="#">Edit</a>
+                        <a href="#">Delete</a>
+                        {% endif %}
+                       
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-2 bg-light">
+                <div class="date post-date p-5">
+                    <p>Posted: {{post.published_date|date:'D M Y'}}</p>
+                </div>
+
+            </div>
+
+            {% endfor %}
+
+        </div>
+    </div>
+    </div>
+
+
+
+<section

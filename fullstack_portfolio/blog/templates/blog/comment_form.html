@@ -1,0 +1,16 @@
+<div class="container p-5">
+
+    <div class="p-5 bg-light">
+        <h1>Add Comment...</h1>
+        <br>
+        <form class="widget-sec post-form" method="post" action="">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <br>
+            <button class="loader btn btn-primary save" type="submit">Post Comment</button>
+        </form>
+    </div>
+    
+    </div>
+    
+    <script> var editor = new MediumEditor('.editable');</script>

@@ -1,0 +1,41 @@
+{% extends 'navbar.html' %}
+{% load static %}
+{% block content %}
+
+<section class="">
+
+
+<div class="container">
+
+
+<div class="p-5 mt-5 log-sec">
+    <h2>Please Login:</h2>
+    <h5>(Must be a Superuser, please check with the site admin)</h5>
+    <br>
+
+    {% if form.errors %}
+        <p>Invalid Username or Password! Please try again.</p>
+    {% endif %}
+
+    <form class="widget-sec" method="post" action="{% url 'login' %}">
+        {% csrf_token %}
+        {{ form.as_p }}
+
+        <div class="mb-3">
+            <label for="username" class="form-label">Username:</label>
+            <input type="text" class="form-control" name="username" placeholder="Enter username">
+            <label for="password" class="form-label">Password:</label>
+            <input type="password" class="form-control" name="password">
+        </div>
+        <input class="-5 btn btn-primary" type="submit" value="Login">
+
+        <p class="pt-3">Not Signed Up Yet?</p>
+        <a class="btn btn-secondary" href="{% url 'register' %}">Sign Up</a>
+    </form>
+</div>
+
+</div>
+
+</section>
+
+{% endblock %}

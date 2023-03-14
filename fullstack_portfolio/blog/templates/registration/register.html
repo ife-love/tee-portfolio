@@ -1,0 +1,45 @@
+{% extends 'blog/base.html' %}
+
+{% load static %}
+
+{% block content %}
+
+<div class="container p-5">
+<div class="bg-light p-5">
+
+    <h1>Register Here!</h1>
+    <p>Fill out the form:</p>
+
+    {% if registered %}
+
+        <h1>Thank you for registering!</h1>
+        <br>
+
+        <a class="loader btn btn-primary" href="{% url 'login' %}">Login</a>
+
+    {% else %}
+
+    <div class="">
+
+        <form class="widget-sec" method="post" enctype="multipart/form-data" action="">
+            {% csrf_token %}
+            {{ user_form.as_p }}
+            {{ profile_form.as_p }}
+
+            <input class="loader btn btn-success" type="submit" value="Register">
+        </form>
+
+        <p class="pt-3">Aready Signed Up?</p>
+        <a class="loader btn btn-secondary" href="{% url 'login' %}">Login</a>
+
+    </div>
+
+    {% endif %}
+
+
+
+</div>
+
+</div>
+
+{% endblock %}

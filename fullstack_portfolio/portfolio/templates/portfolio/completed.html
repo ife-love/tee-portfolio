@@ -1,0 +1,71 @@
+{% extends 'navbar.html' %}
+{% load static %}
+{% block content %}
+
+<!-- <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> -->
+<link rel="stylesheet" href="{% static 'css/complete.css' %}">
+
+<section class="main-header">
+    <h1><span>Completed Projects</span>Gallery</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae, odio!</p>
+</section>
+
+<main class="contain">
+    <sect class="card"  data-aos="fade-in">
+        <img src="{% static 'images/forest/forest4.jpg' %}" alt="image-1">
+        <div>
+            <h3>Project Arizona</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae mollitia impedit veniam modi adipisci sint placeat eum odio? Quaerat id nobis iure modi non hic fuga distinctio optio sunt consequatur.</p>
+            <a href="#" class="btnz">View details</a>
+        </div>
+    </sect>
+
+    <sect class="card" data-aos="fade-left">
+        <img src="{% static 'images/forest/forest2.jpg' %}" alt="image-2">
+        <div>
+            <h3>Lokogoma Estate</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae mollitia impedit veniam modi adipisci sint placeat eum odio? Quaerat id nobis iure modi non hic fuga distinctio optio sunt consequatur.</p>
+            <a href="#" class="btnz">View details</a>
+        </div>
+    </sect>
+
+    <sect class="card" data-aos="fade-right">
+        <img src="{% static 'images/breath.jpg' %}" alt="image-3">
+        <div>
+            <h3>Luxurious Interior</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae mollitia impedit veniam modi adipisci sint placeat eum odio? Quaerat id nobis iure modi non hic fuga distinctio optio sunt consequatur.</p>
+            <a href="#" class="btnz">View details</a>
+        </div>
+    </sect>
+
+    <sect class="card" data-aos="fade-down">
+        <img src="{% static 'images/waters/water2.jpg' %}" alt="image-4">
+        <div>
+            <h3>Project Dome</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae mollitia impedit veniam modi adipisci sint placeat eum odio? Quaerat id nobis iure modi non hic fuga distinctio optio sunt consequatur.</p>
+            <a href="#" class="btnz">View details</a>
+        </div>
+    </sect>
+
+    <sect class="card" data-aos="fade-up">
+        <img src="{% static 'images/birds/bird6.jpg' %}" alt="image-5">
+        <div>
+            <h3>Lake Side Port</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae mollitia impedit veniam modi adipisci sint placeat eum odio? Quaerat id nobis iure modi non hic fuga distinctio optio sunt consequatur.</p>
+            <a href="#" class="btnz">View details</a>
+        </div>
+    </sect>
+</main>
+
+    <!-- aos js file for animation effects -->
+    <script src="{% static 'vendor/dist/aos.js' %}" ></script>
+
+    <!-- aos custom js file for animation effects -->
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <!-- <script>
+      AOS.init();
+    </script> -->
+    <script src="{% static 'js/aos.js' %}"></script>
+
+{% endblock %}

@@ -1,0 +1,100 @@
+/* GLOBAL CLASSES */
+@import url("./variables2.css");
+
+a{
+    text-decoration: none;
+    color: var(--text-grey);
+}
+
+ul{
+    list-style-type: none;
+}
+
+.flex-row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+h1{
+    font-family: var(--Lexend);
+    font-size: 2.5rem;
+}
+
+h2{
+    font-family: var(--Lexend);
+}
+
+h3{
+    font-family: var(--Montserrat);
+    font-size: 1.5rem;
+}
+
+button.btn{
+    border: none;
+    border-radius: 2rem;
+    padding: 1rem 3rem;
+    font-size: 1rem;
+    font-family: var(--Livvic);
+    cursor: pointer;
+}
+
+span{
+    font-family: var(--Abel);
+}
+
+.title-1{
+    font-family: var(--Abel);
+    font-size: 1.3rem;
+    z-index: 99999;
+}
+
+.container{
+    margin: 0 5vw;
+}
+
+.text-grey{
+    color: var(--text-grey);
+}
+
+p{
+    font-family: Lexend;
+    color: var(--text-light);
+}
+
+
+
+.site-text{
+    font: normal bold 50px/72px var(--font-roboto);
+}
+
+
+.text-uppercase{
+    text-transform: uppercase;
+}
+
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ Details of Blog Content@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+.navbar_fixed{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #ffffff;
+    /* box-shadow: var(--box-shadow); */
+    z-index: 9999;
+    transition: all 300ms ease-in-out;
+}
+
+/* SCROLL STUFF */
+.scroll-down nav{
+    transform: translate3d(0, -100%, 0);
+    transition: all 1s ease-in-out;
+}
+
+.scroll-up nav{
+    filter: drop-shadow(0 -10px 20px rgb(170, 170, 170));
+    transition: all 1s ease-in-out;
+}
+

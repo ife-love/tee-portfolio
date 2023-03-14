@@ -1,0 +1,30 @@
+{% extends 'navbar.html' %}
+{% load static %}
+{% block title %}
+    Add Category!
+{% endblock %}
+
+{% block content %}
+
+
+<section>
+    <div class="container p-5">
+        <div class="p-5 bg-light">
+    
+            <h1 class="">Add Category...</h1>
+            <br>
+            <div>
+                <form class="form-group" method="post" enctype="multipart/form-data">
+                    {% csrf_token %}
+                    {{form.as_p}}
+                    <button type="submit" class="save btn btn-secondary">Save</button>
+                </form>
+            </div>
+
+    
+        </div>
+    
+    </div>
+</section>
+
+{% endblock %}

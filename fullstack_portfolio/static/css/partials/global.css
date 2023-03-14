@@ -1,0 +1,349 @@
+/* GLOBAL CLASSES */
+@import url("./variables.css");
+
+.site-text{
+    font: normal bold 50px/72px var(--font-roboto);
+}
+
+.title-text{
+    font: normal bold 50px/72px var(--font-roboto);
+}
+
+.text-uppercase{
+    text-transform: uppercase;
+}
+
+/* BUTTOOONSSS */
+
+ .button{
+    padding: 0.8rem 2.2rem;
+    font: normal 500 16px/20px var(--font-roboto);
+    position: relative;
+    border: 3px solid transparent;
+    border-radius: 100px;
+}
+
+.button2{
+    padding: 0.8rem 2.2rem;
+    font: normal 500 16px/20px var(--font-roboto);
+    position: relative;
+    border: 3px solid transparent;
+    border-radius: 4px;
+}
+
+ .primary-button{
+    background: var(--gradient-color2);
+    background-clip: padding-box;
+    color: whitesmoke;
+    transition: all 0.9s ease ;
+    box-shadow: var(--box-shadow);
+    font-weight: bold;
+} 
+
+.button.primary-button:hover{
+    background: whitesmoke;
+    background-clip: padding-box;
+    color: black;
+}
+
+.button.primary-button::after{
+    position: absolute;
+    top: -2px; left: -2px;
+    bottom: -2px; right: -2px;
+    background: var(--gradient-color2);
+    transition: all 0.9s ease ;
+    content: '';
+    z-index: -1;
+    border-radius: 100px;
+}
+
+.secondary-button{
+    background: var(--gradient-color5);
+    background-clip: padding-box;
+    color: whitesmoke;
+    transition: all 2s ease ;
+    box-shadow: var(--box-shadow);
+    font-weight: bold;
+} 
+
+.button.secondary-button:hover{
+    background: black;
+    background-clip: padding-box;
+    color:gold;
+}
+
+.button.secondary-button:after{
+    position: relative;
+    top: -2px; left: -2px;
+    bottom: -2px; right: -3px;
+    background: rgb(255, 71, 148);
+    transition: all 0.7s ease ;
+    content: '';
+    z-index: -1;
+}
+
+ .tertiary-button{
+    background: #000;
+    background-clip: padding-box;
+    color: whitesmoke;
+    transition: all 0.9s ease ;
+    box-shadow: var(--box-shadow);
+    font-weight: bold;
+} 
+
+.button2.tertiary-button:hover{
+    background: teal;
+    background-clip: padding-box;
+    color: gold;
+}
+
+.button2 .tertiary-button:after{
+    position: absolute;
+    top: -2px; left: -2px;
+    bottom: -2px; right: -2px;
+    background: rgb(255, 71, 148);
+    transition: all 0.9s ease ;
+    content: '';
+    z-index: -1;
+}
+
+
+p .para{
+    color: var(--text-color);
+    font: normal 500 16px/25px var(--font-roboto);
+}
+
+
+.font-roboto{
+    font-family: var(--font-roboto);
+}
+.font-robot{
+    font-family: var(--font-robot);
+}
+
+.primary-color3{
+    color: var(--primary-color3);
+}
+
+button:focus,
+button:active
+button:hover
+.btn:active,
+.btn.active{
+    outline:0px !important;
+    box-shadow: none !important;
+}
+
+.title-h1{
+    font: normal bold 39px/40px var(--font-roboto);
+}
+
+.navbar_fixed{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #ffffff;
+    /* box-shadow: var(--box-shadow); */
+    z-index: 9999;
+    transition: all 300ms ease-in-out;
+}
+
+/* SCROLL STUFF */
+.scroll-down header{
+    transform: translate3d(0, -100%, 0);
+}
+
+.scroll-up header{
+    filter: drop-shadow(0 -10px 20px rgb(170, 170, 170));
+}
+
+
+.anim2{
+    opacity: 0;
+    transform: translateX(20px);
+    animation: shake 0.5 forwards .9s ease-in-out;
+
+ }
+
+ @keyframes shake{
+    0%{
+        opacity: 0;
+        transform: rotate(0) translateX(-30px);
+    }
+    76%{
+        transform: rotate(0) translateX(10px);
+        opacity: 2;
+    }
+ }
+
+ .anim3{
+    opacity: 0;
+    transform: translateX(20px);
+     animation: shakes 0.5 forwards 1s ease;
+
+ }
+
+ @keyframes shakes{
+    0%{
+        opacity: 0;
+        transform: rotate(0) translateX(100px);
+    }
+    76%{
+        transform: rotate(0) translateX(0px);
+        opacity: 2;
+    }
+ }
+
+
+ .anim{
+    opacity: 0;
+    transform: translateY(30px);
+    animation: moveup 0.5s linear forwards;
+ }
+
+ @keyframes moveup{
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+ }
+
+ .fade_in{
+    opacity: 0;
+    transition: opacity 250ms ease-in;
+
+ }
+
+ .fade_in_appear{
+    opacity: 1;
+ }
+
+/* ASEJUUUUUUUUUUUUUUUUUUUU */
+
+/* ____________________________________EXTRAS________________________________________- */
+
+ /* #design{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    display: grid;
+    height: 100%;
+    place-items: center;
+} */
+
+/* .center{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    
+} */
+/* 
+ .outer{
+    position: relative;
+    margin: 0 50px;
+    background:#111;
+}
+
+
+.button{
+    height: 70px;
+    width: 220px;
+    border-radius: 50px;
+}
+
+
+.circle{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+}
+
+
+.outer button, .outer span{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.outer button{
+    background: #111;
+    color: #f2f2f2;
+    outline: none;
+    border: none;
+    font-size: 20px;
+    z-index: 9;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.button button{
+    height: 60px;
+    width: 210px;
+    border-radius: 50px;
+}
+
+.circle button{
+    height: 180px;
+    width: 180px;
+    border-radius: 50%;
+}
+
+.outer span{
+    height: 100%;
+    width: 100%;
+    background: inherit;
+}
+
+.button span{
+    border-radius: 50px;
+}
+
+.circle span{
+    border-radius: 50%;
+}
+
+.outer:hover, span:nth-child(1){
+    filter: blur(7px);
+}
+
+.outer:hover, span:nth-child(2){
+    filter: blur(14px);
+}
+
+.outer:hover{
+    background: linear-gradient(#14ffe9, #ffab3b, #ff00e0);
+    animation: rotate 1.5s linear infinite;
+}
+
+@keyframes rotate {
+    0%{
+        filter:hue-rotate(0deg);
+    }
+    100%{
+        filter:hue-rotate(360deg);
+    }
+}
+
+@media (max-width:640px){
+    .center{
+        flex-wrap: wrap;
+        flex-direction: column;
+        
+    }
+    
+     .outer{
+
+        margin: 50px 0px;
+
+    }
+    
+} */

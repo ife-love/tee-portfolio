@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Queency</title>
+
+    <!-- custom css file -->
+     <link rel="stylesheet" type="text/css" href="{% static 'css/style2.css' %}">
+
+     <!-- Responsive css file -->
+     <!-- <link rel="stylesheet" href="{% static 'css/responsive.css' %}"> -->
+</head>
+<body>
+
+    <!-- @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ START HEADER AREA @@@@@@@@@@@@@@@@@@@@@@@@@@@-->
+
+    <header>
+
+        <a class="logo" href="{% url 'home' %}">phantom</a>
+
+        <ul class="">
+            <li class="">
+              <a class="active" href="{% url 'home' %}">Home</a>
+            </li>
+            <li class="">
+              <a class="" href="{% url 'adventure' %}">Adventure</a>
+            </li>
+            <li class="">
+              <a class="" href="#">Services</a>
+            </li>
+            <li class="">
+              <a class="" href="{% url 'projects' %}">Portfolio</a>
+            </li>
+            <li class="">
+              <a class="" href="{% url 'sample' %}">Pages</a>
+            </li>
+            <li class="">
+              <a class="" href="#">Blog</a>
+            </li>
+            <li class="">
+              <a class="" href="#">Contact</a>
+            </li>
+          </ul>
+        </ul>  
+
+    </header>
+
+    <section>
+        <img src="{% static 'img/galax/stars.png' %}" id="stars" alt="stars">
+        <img src="{% static 'img/galax/moon.png' %}" id="moon" alt="moon">
+        <img src="{% static 'img/galax/mountains_behind.png' %}" id="mountains_behind" alt="mountains_behind">
+        <div class="moontxt">
+            <h2 id="text">Moon Night Tales</h2>
+            <div id="moontext">
+                <span id="by">by</span>
+                <h6 id="by2">Samuel Shadrack</h6>
+            </div>
+
+        </div>
+
+        <a href="#sec" id="btn">Explore</a>
+        <img src="{% static 'img/galax/mountains_front.png' %}" id="mountains_front" alt="mountains_front">
+    </section>
+
+    <div id="sec" class="sec">
+        <h2>experience awesome moon night tales</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, laboriosam asperiores ipsa sed dicta nisi provident earum blanditiis ducimus numquam recusandae aspernatur laborum molestiae voluptate similique quam nostrum, at dolorem! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum aliquid labore obcaecati molestiae ipsum similique natus explicabo quos maxime, a est illo at architecto esse alias tempore expedita facilis harum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat voluptatum deleniti nesciunt sint, maxime ratione aliquid amet necessitatibus vitae laboriosam illo tenetur sit quo qui. Excepturi earum adipisci doloremque error? <br><br> </p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, laboriosam asperiores ipsa sed dicta nisi provident earum blanditiis ducimus numquam recusandae aspernatur laborum molestiae voluptate similique quam nostrum, at dolorem! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum aliquid labore obcaecati molestiae ipsum similique natus explicabo quos maxime, a est illo at architecto esse alias tempore expedita facilis harum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat voluptatum deleniti nesciunt sint. <br><br></p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, laboriosam asperiores ipsa sed dicta nisi provident earum blanditiis ducimus numquam recusandae aspernatur laborum molestiae voluptate similique quam nostrum, at dolorem! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum aliquid labore obcaecati molestiae ipsum similique natus explicabo quos maxime, a est illo at architecto esse alias tempore expedita facilis harum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat voluptatum deleniti nesciunt sint, maxime ratione aliquid amet necessitatibus vitae laboriosam illo tenetur sit quo qui. Excepturi earum adipisci doloremque error? <br><br> </p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, laboriosam asperiores ipsa sed dicta nisi provident earum blanditiis ducimus numquam recusandae aspernatur laborum molestiae voluptate similique quam nostrum, at dolorem! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum aliquid labore obcaecati molestiae ipsum similique natus explicabo quos maxime, a est illo at architecto esse alias tempore expedita facilis harum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat voluptatum deleniti nesciunt sint. <br><br></p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, laboriosam asperiores ipsa sed dicta nisi provident earum blanditiis ducimus numquam recusandae aspernatur laborum molestiae voluptate similique quam nostrum, at dolorem! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum aliquid labore obcaecati molestiae ipsum similique natus explicabo quos maxime, a est illo at architecto esse alias tempore expedita facilis harum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat voluptatum deleniti nesciunt sint, maxime ratione aliquid amet necessitatibus vitae laboriosam illo tenetur sit quo qui. Excepturi earum adipisci doloremque error? <br><br> </p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, laboriosam asperiores ipsa sed dicta nisi provident earum blanditiis ducimus numquam recusandae aspernatur laborum molestiae voluptate similique quam nostrum, at dolorem! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum aliquid labore obcaecati molestiae ipsum similique natus explicabo quos maxime, a est illo at architecto esse alias tempore expedita facilis harum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat voluptatum deleniti nesciunt sint. <br><br></p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, laboriosam asperiores ipsa sed dicta nisi provident earum blanditiis ducimus numquam recusandae aspernatur laborum molestiae voluptate similique quam nostrum, at dolorem! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum aliquid labore obcaecati molestiae ipsum similique natus explicabo quos maxime, a est illo at architecto esse alias tempore expedita facilis harum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat voluptatum deleniti nesciunt sint, maxime ratione aliquid amet necessitatibus vitae laboriosam illo tenetur sit quo qui. Excepturi earum adipisci doloremque error? <br><br> </p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, laboriosam asperiores ipsa sed dicta nisi provident earum blanditiis ducimus numquam recusandae aspernatur laborum molestiae voluptate similique quam nostrum, at dolorem! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum aliquid labore obcaecati molestiae ipsum similique natus explicabo quos maxime, a est illo at architecto esse alias tempore expedita facilis harum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat voluptatum deleniti nesciunt sint. <br><br></p>
+    </div>
+
+    <div class="scene">
+      <img src="{% static 'images/mm/lake.jpg' %}" id="lake" alt="">
+      <img src="{% static 'images/stars.png' %}" id="star" alt="">
+      <h2 id="nt_txt">Animal Kingdom</h2>
+      <button type="button" id="button">get started</button>
+    </div>
+
+      <script src="{% static 'js/galax.js' %}">
+      </script>
+</body>
